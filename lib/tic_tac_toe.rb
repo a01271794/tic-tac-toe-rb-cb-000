@@ -43,7 +43,7 @@ def turn_count(board)
     return number_turn
   }
 
-def current_player(board)  
+def current_player(board)
   turns = turn_count(board)
   if turn % 2 == 0
     player = "X"
