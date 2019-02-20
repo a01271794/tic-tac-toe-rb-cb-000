@@ -41,7 +41,7 @@ def turn_count(board)
       number_turn += 1
     end
   }
-    return number_turn
+  return number_turn
 end
 
 def current_player(board)
