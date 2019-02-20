@@ -35,5 +35,7 @@ def valid_move?(board, position)
 end
 
 def turn(board)
+  puts "Please choose a position 1-9."
+  gets.chomp.to_i
   
 end
