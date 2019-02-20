@@ -40,7 +40,7 @@ def turn_count(board)
     if position == "X" || index == "O"
       number_turn += 1
     }
-  end
+    end
     return number_turn
 end
 
