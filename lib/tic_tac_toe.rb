@@ -39,8 +39,9 @@ def turn_count(board)
   board.each { |position|
     if position == "X" || index == "O"
       number_turn += 1
-    }
+    end
     return number_turn
+  }
 end
 
 def current_player(board)
