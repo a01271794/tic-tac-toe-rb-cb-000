@@ -45,5 +45,5 @@ def turn_count(board)
 def turn(board)
   puts "Please choose a position 1-9."
   gets.chomp.to_i
-  
+
 end
