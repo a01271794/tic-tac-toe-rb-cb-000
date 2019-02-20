@@ -56,7 +56,7 @@ end
 
 def turn(board)
   puts "Please choose a position 1-9."
-  user_input gets.chomp
+  user_input = gets.chomp
   position = input_to_index(user_input)
   if valid_move?(board, position)
     player_token = current_player(board)
