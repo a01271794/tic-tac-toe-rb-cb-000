@@ -35,13 +35,24 @@ def valid_move?(board, position)
 end
 
 def turn_count(board)
-  turn = 0
+  number_turn = 0
   board.each { |position|
     if position == "X" || index == "O"
-      turn += 1
+      number_turn += 1
     end
-    return turn
+    return number_turn
   }
+
+def current_player(board)  
+  turns = turn_count(board)
+  if turn % 2 == 0
+    player = "X"
+  else
+    player = "O"
+  end
+  return player
+end
+
 def turn(board)
   puts "Please choose a position 1-9."
   gets.chomp.to_i
