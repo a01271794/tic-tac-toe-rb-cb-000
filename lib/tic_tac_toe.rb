@@ -46,7 +46,7 @@ end
 
 def current_player(board)
   turns = turn_count(board)
-  if turn % 2 == 0
+  if turns % 2 == 0
     player = "X"
   else
     player = "O"
@@ -59,7 +59,7 @@ def turn(board)
   user_input = gets.chomp
   position = input_to_index(user_input)
   if valid_move?(board, position)
-    player_token = player_token(board)
+    player_token = current_player(board)
     move(board, position, player_token)
     display_board(board)
   else
